@@ -1,0 +1,18 @@
+{
+  "name": "@kentaromiura/relax",
+  "version": "1.0.0",
+  "description": "relax.ts is a port of my C++ library relax which is a typesafe version of redux store.",
+  "main": "dist/index.js",
+  "module": "dist/lib/relax.js",
+  "typings": "dist/types/relax.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "make": "ROME_DEV_VENDOR_BUNDLING=true yarn rome bundle src/relax.ts dist/",
+    "types": "yarn tsc"
+  },
+  "devDependencies": {
+    "rome": "^10.0.4-beta",
+    "terser": "^5.7.0",
+    "typescript": "^4.3.2"
+  }
+}
