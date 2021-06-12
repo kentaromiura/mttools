@@ -1,0 +1,9 @@
+{
+  "name": "mttools",
+  "version": "2.0.0",
+  "description": "My typesafe tools.",
+  "main": "index.js",
+  "repository": "https://github.com/kentaromiura/mttools",
+  "author": "Carlesso Cristian <@kentaromiura> <kentaromiura@gmail.com>",
+  "license": "MIT"
+}
