@@ -5,7 +5,7 @@ export class Store<State, Actions> {
 	state: State;
 	private reducer: Reducer<State, Actions>;
 	private isDispatching = false;
-	private listeners: Array<Callback>;
+	private listeners: Callback[];
 
 	constructor(reducer: Reducer<State, Actions>, initialState: State) {
 		this.reducer = reducer;
