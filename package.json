@@ -8,15 +8,23 @@
 	"author": "Carlesso Cristian <@kentaromiura> <kentaromiura@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"rome": "./rome.130621.tar.gz"
+		"rome": "./rome.2021-06-16.tar.gz"
 	},
 	"scripts": {
 		"lint": "rome check",
-		"test": "yarn rome test"
+		"test": "yarn rome test && yarn jest"
 	},
 	"workspaces": [
 		"relax",
-		"relax-tests"
+		"relax-tests",
+		"relax-react",
+		"relax-react-tests"
 	],
-	"private": true
+	"private": true,
+	"jest": {
+		"preset": "ts-jest",
+		"modulePathIgnorePatterns": [
+			"<rootDir>/relax-tests"
+		]
+	}
 }

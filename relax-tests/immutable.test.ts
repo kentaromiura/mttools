@@ -1,7 +1,7 @@
 import {test} from "rome";
 import {Actions} from "./actions";
 import {Store} from "../relax/src/relax";
-// bug in rome...
+// bug in rome ?
 const {produce} = require("../node_modules/immer");
 
 function describe(description, suite) {

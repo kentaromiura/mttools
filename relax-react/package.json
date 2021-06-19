@@ -1,0 +1,22 @@
+{
+	"name": "@kentaromiura/relax-react",
+	"version": "1.0.0",
+	"description": "relax-react is an helper library to use relax in react.",
+	"main": "dist/index.js",
+	"module": "dist/lib/relax-react.js",
+	"typings": "dist/types/relax-react.d.ts",
+	"license": "MIT",
+	"scripts": {
+		"make": "ROME_DEV_VENDOR_BUNDLING=true yarn rome bundle src/index.ts dist/",
+		"types": "yarn tsc"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.11",
+		"rome": "^10.0.4-beta",
+		"terser": "^5.7.0",
+		"typescript": "^4.3.2"
+	},
+	"peerDependencies": {
+		"react": ">= 16.0.0"
+	}
+}
