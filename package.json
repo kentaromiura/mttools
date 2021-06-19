@@ -1,0 +1,30 @@
+{
+	"name": "mttools",
+	"version": "2.0.0",
+	"description": "My typesafe tools.",
+	"main": "dist/index.js",
+	"module": "dist/lib/relax.js",
+	"repository": "https://github.com/kentaromiura/mttools",
+	"author": "Carlesso Cristian <@kentaromiura> <kentaromiura@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"rome": "./rome.2021-06-16.tar.gz"
+	},
+	"scripts": {
+		"lint": "rome check",
+		"test": "yarn rome test && yarn jest"
+	},
+	"workspaces": [
+		"relax",
+		"relax-tests",
+		"relax-react",
+		"relax-react-tests"
+	],
+	"private": true,
+	"jest": {
+		"preset": "ts-jest",
+		"modulePathIgnorePatterns": [
+			"<rootDir>/relax-tests"
+		]
+	}
+}

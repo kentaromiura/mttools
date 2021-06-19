@@ -1,0 +1,16 @@
+{
+	"name": "relax-tests",
+	"version": "1.0.0",
+	"description": "Tests for relax",
+	"main": "index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^15.12.2",
+		"rome": "./rome.130621.tar.gz",
+		"typescript": "^4.3.2"
+	},
+	"dependencies": {
+		"immer": "^9.0.3"
+	},
+	"private": true
+}
