@@ -18,5 +18,12 @@
 	},
 	"peerDependencies": {
 		"react": ">= 16.0.0"
+	},
+	"rome": {
+		"bundler": {
+			"externals": [
+				"react"
+			]
+		}
 	}
 }
